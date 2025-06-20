@@ -2,14 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VapeDeals Hub - Affordable Vapes</title>
+  <title>Products - VapeDeals Hub</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      margin: 1rem;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .product a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #0d47a1;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .product a:hover {
+      background: #08306b;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>VapeDeals Hub</h1>
+      <h1>Our Products</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
@@ -18,11 +56,26 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Find the Best Vape Deals Online</h2>
-      <p>We bring you affordable, trusted vapes from popular brands — all in one place.</p>
-      <a href="products.html" class="btn">Shop Now</a>
+  <section class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61+LzEcL2vL._AC_SL1500_.jpg" alt="Elf Bar BC5000" />
+      <h3>Elf Bar BC5000</h3>
+      <p>Price: R250</p>
+      <a href="https://wa.me/27601234567" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.shopify.com/s/files/1/0688/0183/9892/products/Bar-5000-Rainbow-Sugarcane.jpg?v=1677886883" alt="Nasty Bar 5000" />
+      <h3>Nasty Bar 5000</h3>
+      <p>Price: R280</p>
+      <a href="https://wa.me/27601234567" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1612831661470-c5bcae60fa4e" alt="Lost Mary" />
+      <h3>Lost Mary Disposable</h3>
+      <p>Price: R260</p>
+      <a href="https://wa.me/27601234567" target="_blank">Order on WhatsApp</a>
     </div>
   </section>
 
@@ -32,7 +85,5 @@
       <p>&copy; 2025 VapeDeals Hub. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
